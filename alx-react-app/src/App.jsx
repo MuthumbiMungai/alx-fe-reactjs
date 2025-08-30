@@ -1,15 +1,21 @@
-import "./App.css";
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+import React from 'react';
+import UserProfile from './components/UserProfile';
 
 function App() {
   return (
-    <>
-      <Header />
-      <MainContent />
-      <Footer />
-    </>
+    <div style={{ padding: '2rem' }}>
+      <h1>Task 3: User Profile</h1>
+      <UserProfile 
+        name="Andrew Mungai" 
+        age={28} 
+        bio="I am a passionate developer and lifelong learner." 
+      />
+      <UserProfile 
+        name="Jane Doe" 
+        age={25} 
+        bio="Frontend enthusiast with a love for design and UX." 
+      />
+    </div>
   );
 }
 

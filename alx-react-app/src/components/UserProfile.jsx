@@ -1,10 +1,11 @@
-// src/components/UserProfile.jsx
-const UserProfile = (props) => {
+import React from 'react';
+
+const UserProfile = ({ name, age, bio }) => {
   return (
-    <div className="user-profile" style={{ border: "1px solid #ccc", padding: "1rem", borderRadius: "8px", margin: "1rem 0" }}>
-      <h2>{props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>{props.bio}</p>
+    <div style={{ border: '1px solid #ccc', padding: '1rem', margin: '1rem 0' }}>
+      <h2>{name}</h2>
+      <p>Age: {age}</p>
+      <p>Bio: {bio}</p>
     </div>
   );
 };
