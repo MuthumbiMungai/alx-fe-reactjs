@@ -6,12 +6,12 @@ function App() {
     <div style={{ padding: '2rem' }}>
       <h1>Task 3: User Profile</h1>
       <UserProfile 
-        name="Andrew Mungai" 
+        name="Alice" 
         age={28} 
-        bio="I am a passionate developer and lifelong learner." 
+        bio="Loves hiking and photography" 
       />
       <UserProfile 
-        name="Jane Doe" 
+        name="Bob" 
         age={25} 
         bio="Frontend enthusiast with a love for design and UX." 
       />
